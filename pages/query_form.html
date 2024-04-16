@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Query Form - Student QnA Form</title>
+<style>
+  /* CSS for styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  nav {
+    background-color: #f1f1f1;
+    width: 200px;
+    height: 100%;
+    float: left;
+  }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  nav ul li {
+    padding: 10px;
+  }
+  main {
+    margin-left: 220px; /* Adjusted for nav width and some margin */
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  form {
+    margin-bottom: 20px;
+  }
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Student QnA Forum</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="query_form.html">Query Form</a></li>
+    <li><a href="auth/login.html">Log Out</a></li>
+  </ul>
+</nav>
+
+<main>
+  <h2>Post Question</h2>
+  
+  <form>
+    <label for="question">Your Question:</label>
+    <textarea id="question" name="question" rows="5" required></textarea>
+    
+    <input type="submit" value="Submit Question">
+  </form>
+</main>
+
+</body>
+</html>

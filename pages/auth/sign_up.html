@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup - Student QnA Forum-</title>
+<style>
+  /* CSS for styling */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+  }
+  main {
+    padding: 20px;
+  }
+  form {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Student QnA Forum - Signup</h1>
+</header>
+
+<main>
+  <form action="/signup" method="post">
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="text" name="email" placeholder="Email" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+  </form>
+  <center>
+    <button class="login">Sign Up</button>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </center>
+  
+</main>
+
+</body>
+</html>
